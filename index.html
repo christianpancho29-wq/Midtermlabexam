@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="pageLoader" class="page-loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#home">My Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mission">Mission/Vision</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero-section">
+        <div
+          id="portfolioCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfN9vw6dgB4zA0JvB0UEvojVVZZXduGdzBSa5J_U9lA&s=10"
+                class="d-block w-100"
+                alt="Homepage slide 1"
+              />
+              <div class="carousel-caption">
+                <h1>WELCOME TO MY PERSONAL PORTFOLIO</h1>
+                <p>
+                  Hi! My name is Christian Julius M. Pancho from Bachelor of
+                  Science in Information Technology student.
+                </p>
+                <a href="#about" class="btn btn-primary btn-lg mt-3"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg"
+                class="d-block w-100"
+                alt="Homepage slide 2"
+              />
+              <div class="carousel-caption">
+                <h1>WELCOME TO MY PERSONAL PORTFOLIO</h1>
+                <p>
+                  Hi! My name is Christian Julius M. Pancho from Bachelor of
+                  Science in Information Technology student.
+                </p>
+                <a href="#about" class="btn btn-primary btn-lg mt-3"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://osc.com.fj/wp-content/uploads/2024/05/Unveiling-Modern-Trends-in-Technology.jpeg"
+                class="d-block w-100"
+                alt="Homepage slide 3"
+              />
+              <div class="carousel-caption">
+                <h1>WELCOME TO MY PERSONAL PORTFOLIO</h1>
+                <p>
+                  Hi! My name is Christian Julius M. Pancho from Bachelor of
+                  Science in Information Technology student.
+                </p>
+                <a href="#about" class="btn btn-primary btn-lg mt-3"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="about" class="content-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+          </div>
+          <div class="row align-items-center g-5">
+            <div class="col-md-4 text-center">
+              <img
+                src="https://scontent.fmnl8-8.fna.fbcdn.net/v/t39.30808-6/728637300_1639580557150547_6487005488816024431_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGYlJRu91An_W1j675acp2_4Y14wWYP5dPhjXjBZg_l05BNGTFxmzRdiCE2lHuogVJFY7hPSKWv-N7ytO7HkINa&_nc_ohc=WfDvws_XOLsQ7kNvwECnfvI&_nc_oc=AdrqOaY8H1RRCp4W-9DuJ7eswlArO9qJYS9hFwPZ7dmxEfohC48K9C6UYswbX_0-bJM&_nc_zt=23&_nc_ht=scontent.fmnl8-8.fna&_nc_gid=afJ2V4CKR0-TemgxPulFhQ&_nc_ss=7b2a8&oh=00_AQI3vrMfZXEoBqpP10z9yhANlR5lr21qyv3XfVnGkQshpA&oe=6AA1E8A8"
+                class="img-fluid rounded-circle shadow"
+                alt="Profile photo"
+              />
+            </div>
+            <div class="col-md-8">
+              <h3>Pancho, Christian Julius M.</h3>
+
+              <p class="mb-1"><strong>Age:</strong> 18</p>
+
+              <p class="mt-3 mb-2"><strong>Educational Background:</strong></p>
+              <ul class="list-unstyled mb-3">
+                <li class="border-start border-3 border-primary ps-3 mb-3">
+                  <h6 class="mb-0">Southville 1 Elementary School</h6>
+                  <span class="text-muted">Elementary Graduate</span>
+                </li>
+                <li class="border-start border-3 border-primary ps-3 mb-3">
+                  <h6 class="mb-0">Cabuyao Integrated National High School</h6>
+                  <span class="text-muted">Junior High School Graduate</span>
+                </li>
+                <li class="border-start border-3 border-primary ps-3">
+                  <h6 class="mb-0">Citi Global College</h6>
+                  <span class="text-muted">Senior High School Graduate</span>
+                </li>
+              </ul>
+
+              <p class="mt-3 mb-2"><strong>Skills:</strong></p>
+              <div class="mb-3">
+                <span class="badge bg-primary me-1 mb-1">Coding</span>
+                <span class="badge bg-primary me-1 mb-1">Online Games</span>
+                <span class="badge bg-primary me-1 mb-1">Cooking</span>
+              </div>
+
+              <p>
+                I am a Bachelor of Science in Information Technology (BSIT)
+                student with a passion for technology, problem-solving, and
+                continuous learning. I have developed foundational skills in
+                programming, web development, database management, and
+                information systems through my academic studies and projects. I
+                am eager to apply my knowledge in real-world situations, gain
+                practical experience, and continue developing my technical and
+                professional skills as I prepare for a future career in the IT
+                industry.
+              </p>
+
+              <a href="#contact" class="btn btn-primary mt-2">Let's Connect</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="content-section light-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">MY WORK</p>
+            <h2>Gallery</h2>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="portfolio-card h-100">
+                <img
+                  src="https://scontent.fmnl8-8.fna.fbcdn.net/v/t39.30808-6/728637300_1639580557150547_6487005488816024431_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGYlJRu91An_W1j675acp2_4Y14wWYP5dPhjXjBZg_l05BNGTFxmzRdiCE2lHuogVJFY7hPSKWv-N7ytO7HkINa&_nc_ohc=WfDvws_XOLsQ7kNvwECnfvI&_nc_oc=AdrqOaY8H1RRCp4W-9DuJ7eswlArO9qJYS9hFwPZ7dmxEfohC48K9C6UYswbX_0-bJM&_nc_zt=23&_nc_ht=scontent.fmnl8-8.fna&_nc_gid=afJ2V4CKR0-TemgxPulFhQ&_nc_ss=7b2a8&oh=00_AQI3vrMfZXEoBqpP10z9yhANlR5lr21qyv3XfVnGkQshpA&oe=6AA1E8A8"
+                  class="card-img-top"
+                  alt="Gallery photo 1"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">This is Me</h3>
+                  <p class="card-text">This is just me</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="portfolio-card h-100">
+                <img
+                  src="https://scontent.fmnl8-8.fna.fbcdn.net/v/t39.30808-6/728637300_1639580557150547_6487005488816024431_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGYlJRu91An_W1j675acp2_4Y14wWYP5dPhjXjBZg_l05BNGTFxmzRdiCE2lHuogVJFY7hPSKWv-N7ytO7HkINa&_nc_ohc=WfDvws_XOLsQ7kNvwECnfvI&_nc_oc=AdrqOaY8H1RRCp4W-9DuJ7eswlArO9qJYS9hFwPZ7dmxEfohC48K9C6UYswbX_0-bJM&_nc_zt=23&_nc_ht=scontent.fmnl8-8.fna&_nc_gid=afJ2V4CKR0-TemgxPulFhQ&_nc_ss=7b2a8&oh=00_AQI3vrMfZXEoBqpP10z9yhANlR5lr21qyv3XfVnGkQshpA&oe=6AA1E8A8"
+                  class="card-img-top"
+                  alt="Gallery photo 2"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">This is Me</h3>
+                  <p class="card-text">This is just me</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="portfolio-card h-100">
+                <img
+                  src="https://scontent.fmnl8-8.fna.fbcdn.net/v/t39.30808-6/728637300_1639580557150547_6487005488816024431_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGYlJRu91An_W1j675acp2_4Y14wWYP5dPhjXjBZg_l05BNGTFxmzRdiCE2lHuogVJFY7hPSKWv-N7ytO7HkINa&_nc_ohc=WfDvws_XOLsQ7kNvwECnfvI&_nc_oc=AdrqOaY8H1RRCp4W-9DuJ7eswlArO9qJYS9hFwPZ7dmxEfohC48K9C6UYswbX_0-bJM&_nc_zt=23&_nc_ht=scontent.fmnl8-8.fna&_nc_gid=afJ2V4CKR0-TemgxPulFhQ&_nc_ss=7b2a8&oh=00_AQI3vrMfZXEoBqpP10z9yhANlR5lr21qyv3XfVnGkQshpA&oe=6AA1E8A8"
+                  class="card-img-top"
+                  alt="Gallery photo 3"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">This is Me</h3>
+                  <p class="card-text">This is just me</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="portfolio-card h-100">
+                <img
+                  src="https://scontent.fmnl8-8.fna.fbcdn.net/v/t39.30808-6/728637300_1639580557150547_6487005488816024431_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGYlJRu91An_W1j675acp2_4Y14wWYP5dPhjXjBZg_l05BNGTFxmzRdiCE2lHuogVJFY7hPSKWv-N7ytO7HkINa&_nc_ohc=WfDvws_XOLsQ7kNvwECnfvI&_nc_oc=AdrqOaY8H1RRCp4W-9DuJ7eswlArO9qJYS9hFwPZ7dmxEfohC48K9C6UYswbX_0-bJM&_nc_zt=23&_nc_ht=scontent.fmnl8-8.fna&_nc_gid=afJ2V4CKR0-TemgxPulFhQ&_nc_ss=7b2a8&oh=00_AQI3vrMfZXEoBqpP10z9yhANlR5lr21qyv3XfVnGkQshpA&oe=6AA1E8A8"
+                  class="card-img-top"
+                  alt="Gallery photo 4"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">This is Me</h3>
+                  <p class="card-text">This is just me</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="portfolio-card h-100">
+                <img
+                  src="https://scontent.fmnl8-8.fna.fbcdn.net/v/t39.30808-6/728637300_1639580557150547_6487005488816024431_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGYlJRu91An_W1j675acp2_4Y14wWYP5dPhjXjBZg_l05BNGTFxmzRdiCE2lHuogVJFY7hPSKWv-N7ytO7HkINa&_nc_ohc=WfDvws_XOLsQ7kNvwECnfvI&_nc_oc=AdrqOaY8H1RRCp4W-9DuJ7eswlArO9qJYS9hFwPZ7dmxEfohC48K9C6UYswbX_0-bJM&_nc_zt=23&_nc_ht=scontent.fmnl8-8.fna&_nc_gid=afJ2V4CKR0-TemgxPulFhQ&_nc_ss=7b2a8&oh=00_AQI3vrMfZXEoBqpP10z9yhANlR5lr21qyv3XfVnGkQshpA&oe=6AA1E8A8"
+                  class="card-img-top"
+                  alt="Gallery photo 5"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">This is Me</h3>
+                  <p class="card-text">This is just me</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="portfolio-card h-100">
+                <img
+                  src="https://scontent.fmnl8-8.fna.fbcdn.net/v/t39.30808-6/728637300_1639580557150547_6487005488816024431_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGYlJRu91An_W1j675acp2_4Y14wWYP5dPhjXjBZg_l05BNGTFxmzRdiCE2lHuogVJFY7hPSKWv-N7ytO7HkINa&_nc_ohc=WfDvws_XOLsQ7kNvwECnfvI&_nc_oc=AdrqOaY8H1RRCp4W-9DuJ7eswlArO9qJYS9hFwPZ7dmxEfohC48K9C6UYswbX_0-bJM&_nc_zt=23&_nc_ht=scontent.fmnl8-8.fna&_nc_gid=afJ2V4CKR0-TemgxPulFhQ&_nc_ss=7b2a8&oh=00_AQI3vrMfZXEoBqpP10z9yhANlR5lr21qyv3XfVnGkQshpA&oe=6AA1E8A8"
+                  class="card-img-top"
+                  alt="Gallery photo 6"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">This is Me</h3>
+                  <p class="card-text">This is just me</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission" class="content-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">PAMANTASAN NG CABUYAO</p>
+            <h2>Mission and Vision</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="info-card h-100">
+                <div class="icon-circle">M</div>
+                <h3>INSTITUTIONAL MISSION</h3>
+                <p>
+                  As an institution of higher learning, PnC is committed to
+                  equip individuals with knowledge, skills and values that will
+                  enable them to achieve their professional goals and provide
+                  leadership and service for national development.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-card h-100">
+                <div class="icon-circle">V</div>
+                <h3>INSTITUTIONAL VISION</h3>
+                <p>
+                  A premier educational institution of higher learning in Region
+                  IV, developing globally-competitive and value-laden
+                  professionals and leaders instrumental to community
+                  development and nation building.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section contact-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">SAY HELLO</p>
+            <h2>Contact Me</h2>
+          </div>
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center">
+      <p class="mb-0">
+        &copy; 2026 My Personal Portfolio. | Pancho, Christian Julius M. | 2 -
+        IT A
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+:root {
+    --dark-blue: #1a2632;
+    --blue: #3b6ea5;
+    --light-blue: #eceff1;
+    --text-color: #333333;
+    --muted-text: #6b7280;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+.page-loader {
+    display: flex;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    animation: fadeOutLoader 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.page-loader .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+@keyframes fadeOutLoader {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
+.navbar {
+    padding: 14px 0;
+    background-color: #3b6ea5;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    margin-left: 10px;
+    color: #eaf3fb;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #1a2632;
+}
+
+
+.hero-section {
+    padding-top: 68px;
+}
+
+.carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.carousel-caption {
+    right: 12%;
+    bottom: 25%;
+    left: 12%;
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption p {
+    font-size: 1.15rem;
+}
+
+
+.content-section {
+    padding: 90px 0;
+}
+
+.light-section {
+    background-color: var(--light-blue);
+}
+
+#mission {
+    background-color: var(--dark-blue);
+}
+
+#mission .eyebrow {
+    color: #9fc1e0 !important;
+}
+
+#mission .section-heading h2 {
+    color: #ffffff;
+}
+
+#mission .section-heading p:last-child {
+    color: #a9b7c4;
+}
+
+#mission .info-card {
+    background-color: #24333f;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+#mission .info-card h3 {
+    color: #ffffff;
+}
+
+#mission .info-card p {
+    color: #b7c2cc;
+}
+
+#mission .icon-circle {
+    color: #ffffff;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 12px;
+    color: var(--dark-blue);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.section-heading p:last-child {
+    color: var(--muted-text);
+}
+
+.eyebrow {
+    margin-bottom: 6px;
+    color: var(--blue) !important;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.portfolio-card,
+.info-card {
+    overflow: hidden;
+    border: 0;
+    border-radius: 14px;
+    background-color: var(--white);
+    box-shadow: 0 8px 24px rgba(26, 38, 50, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-card:hover,
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(26, 38, 50, 0.16);
+}
+
+.portfolio-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.portfolio-card .card-body {
+    padding: 24px;
+}
+
+.portfolio-card .card-title,
+.info-card h3 {
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.portfolio-card .card-text,
+.info-card p {
+    color: var(--muted-text);
+}
+
+.info-card {
+    padding: 32px;
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.btn-primary {
+    border: 0;
+    padding: 11px 22px;
+    background-color: var(--blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+}
+
+.badge.bg-primary {
+    background-color: var(--blue) !important;
+}
+
+.text-muted {
+    color: var(--muted-text) !important;
+}
+
+.contact-section {
+    background-color: #dde1e4;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 14px;
+    background-color: var(--white);
+    box-shadow: 0 8px 24px rgba(26, 38, 50, 0.1);
+}
+
+.form-label {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.form-control {
+    padding: 12px 14px;
+}
+
+.form-control:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 0.2rem rgba(59, 110, 165, 0.2);
+}
+
+footer {
+    padding: 25px 0;
+    color: #eceff1;
+    background-color: var(--dark-blue);
+}
+
+@media (max-width: 767px) {
+    .content-section {
+        padding: 65px 0;
+    }
+
+    .carousel-item {
+        height: 480px;
+    }
+
+    .carousel-caption {
+        bottom: 20%;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+}
+
+/* Automatic dark mode — follows the device/browser setting, no toggle needed */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dark-blue: #e5e7eb;
+        --blue: #6699cc;
+        --light-blue: #1c1f24;
+        --text-color: #d1d5db;
+        --muted-text: #9ca3af;
+        --white: #121417;
+    }
+
+    body {
+        background-color: var(--white);
+    }
+
+    .navbar {
+        background-color: #000000;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+        color: #6699cc;
+    }
+
+    .portfolio-card,
+    .info-card,
+    .contact-form {
+        background-color: #1c1f24;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-control {
+        color: var(--text-color);
+        background-color: #22262b;
+        border-color: #3a3f47;
+    }
+
+    .form-control::placeholder {
+        color: var(--muted-text);
+    }
+
+    .form-control:focus {
+        background-color: #22262b;
+        color: var(--text-color);
+    }
+
+    .btn-primary:hover {
+        background-color: #3b6ea5;
+    }
+
+    #mission {
+        background-color: #000000;
+    }
+
+    #mission .info-card {
+        background-color: #1c1f24;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-section {
+        background-color: #1a1d21;
+    }
+
+    footer {
+        background-color: #000000;
+    }
+}
